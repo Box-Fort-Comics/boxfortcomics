@@ -222,7 +222,7 @@
   align-items: stretch;
   width: 100vw;
   height: auto;
-  margin-top: 8vh;
+  margin-top: 0;
   display: flex;
 }
 
@@ -459,7 +459,7 @@
 }
 
 .navbar_background {
-  z-index: 9;
+  z-index: auto;
   background-color: #ffb81c;
   width: 100%;
   height: 8vh;
@@ -672,7 +672,7 @@
   max-height: 650px;
 }
 
-.image-2 {
+.boxfort_headerlogo {
   aspect-ratio: auto;
   object-fit: cover;
   object-position: 50% 50%;
@@ -749,7 +749,7 @@
   font-weight: 400;
 }
 
-.contact_menu {
+.form_menu {
   z-index: auto;
   background-color: #39393a;
   flex-flow: column;
@@ -765,7 +765,6 @@
   z-index: 6;
   grid-column-gap: 0vh;
   grid-row-gap: 0vh;
-  background-color: #ff0707;
   justify-content: center;
   align-items: center;
   width: 8vh;
@@ -790,6 +789,7 @@
 .submit-button {
   background-color: #ff6441;
   border-radius: 10px;
+  margin-top: 2rem;
   padding: 9px 33px;
   font-family: Rock Salt, sans-serif;
   font-size: 1rem;
@@ -821,6 +821,27 @@
 
 .spacer_2rem {
   height: 2rem;
+}
+
+.allmenus_wrapper-copy {
+  z-index: 5;
+  position: fixed;
+}
+
+.navbar_simple {
+  z-index: auto;
+  background-color: #ffb81c;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  padding-left: 2rem;
+  display: flex;
+  position: static;
+}
+
+.boxfort_logo {
+  height: 5.5vh;
 }
 
 @media screen and (max-width: 991px) {
@@ -960,6 +981,11 @@
     display: flex;
   }
 
+  .status_wrapper {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+  }
+
   .spacer_2rem {
     height: 5rem;
   }
@@ -983,6 +1009,8 @@
   }
 
   .nav_menu_button {
+    min-width: 8px;
+    min-height: 8px;
     margin-left: -.5vw;
   }
 
@@ -992,6 +1020,10 @@
 
   .nav_logo {
     height: 5vh;
+  }
+
+  .lottie_hamburger {
+    transform: scale(1.4);
   }
 
   .comic_heading {
@@ -1057,6 +1089,8 @@
   }
 
   .secttext_wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 90vw;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -1092,14 +1126,30 @@
     font-size: .75rem;
   }
 
+  .text-photo_wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
   .image {
     min-height: auto;
     max-height: none;
   }
 
-  .image-2 {
+  .scroll-bg_wrapper {
+    margin-top: -35px;
+  }
+
+  .boxfort_headerlogo {
     object-fit: contain;
     object-position: 0% 50%;
+  }
+
+  .status_wrapper {
+    width: 250px;
+    min-width: 250px;
+    margin-top: -4rem;
   }
 
   .shop_status {
@@ -1108,6 +1158,14 @@
 
   .nav_menu_button02 {
     margin-left: -.5vw;
+  }
+
+  .button_wrapper {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    display: flex;
   }
 }
 
