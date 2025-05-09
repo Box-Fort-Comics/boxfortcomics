@@ -436,7 +436,7 @@
   grid-auto-columns: 1fr;
   width: 40vw;
   height: 100vh;
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
