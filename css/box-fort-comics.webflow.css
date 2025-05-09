@@ -697,7 +697,7 @@
   object-fit: cover;
   object-position: 50% 50%;
   max-width: 100%;
-  height: 5.5vh;
+  height: 80%;
   overflow: hidden;
 }
 
@@ -946,7 +946,7 @@
 .section {
   background-color: #000;
   width: 100vw;
-  height: 5vh;
+  height: 1vh;
 }
 
 .link-block {
@@ -956,6 +956,16 @@
   height: 8vh;
   padding-left: 2rem;
   display: flex;
+}
+
+.boxfort_headerlogo-mobile {
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-width: 100%;
+  height: 80%;
+  display: none;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 991px) {
@@ -1134,14 +1144,13 @@
 
 @media screen and (max-width: 479px) {
   .navbar_wrapper {
-    padding-left: 5vw;
+    padding-left: 0;
     padding-right: 5vw;
   }
 
   .nav_menu_button {
     min-width: 8px;
     min-height: 8px;
-    margin-left: -.5vw;
   }
 
   .nav_name {
@@ -1297,6 +1306,10 @@
     object-position: 0% 50%;
   }
 
+  .boxfort_headerlogo.mobile {
+    display: none;
+  }
+
   .sect_ourshop {
     background-image: none;
   }
@@ -1341,6 +1354,12 @@
   .banner_image_wrapper {
     width: 90vw;
     height: 3vh;
+  }
+
+  .boxfort_headerlogo-mobile {
+    object-fit: contain;
+    object-position: 0% 50%;
+    display: block;
   }
 }
 
