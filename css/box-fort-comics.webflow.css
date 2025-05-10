@@ -603,7 +603,7 @@
 }
 
 .comic_img.comingsoon {
-  background-image: url('../images/BL-Sketch-Watermark.jpg');
+  background-image: url('../images/Hiraeth---Coming-Soon-Cover.jpg');
   display: block;
 }
 
@@ -699,6 +699,10 @@
   max-width: 100%;
   height: 80%;
   overflow: hidden;
+}
+
+.boxfort_headerlogo.mobile {
+  height: 75%;
 }
 
 .trash {
@@ -870,7 +874,7 @@
 }
 
 .boxfort_logo {
-  height: 5.5vh;
+  height: 75%;
 }
 
 .sect_mainlanding {
@@ -927,7 +931,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 60vw;
-  height: 8vh;
+  height: 3vh;
   display: flex;
   overflow: visible;
 }
@@ -969,6 +973,11 @@
   height: 80%;
   display: none;
   overflow: hidden;
+}
+
+.image-3 {
+  height: auto;
+  max-height: 3rem;
 }
 
 @media screen and (max-width: 991px) {
