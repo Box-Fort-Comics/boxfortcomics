@@ -815,7 +815,11 @@
 
 .text-field {
   background-color: #f7f5f9;
+  width: 80vw;
   height: 30vh;
+  padding-bottom: 252px;
+  font-size: 1.2rem;
+  overflow: hidden;
 }
 
 .form {
@@ -852,8 +856,14 @@
   font-family: Rock Salt, sans-serif;
 }
 
-.text-field-2, .text-field-3 {
+.txt_field_email {
   background-color: #f7f5f9;
+}
+
+.txt_field_main {
+  background-color: #f7f5f9;
+  font-size: 1.15rem;
+  font-weight: 500;
 }
 
 .spacer_2rem {
@@ -1150,6 +1160,10 @@
   margin-top: 27px;
   display: none;
   position: fixed;
+}
+
+.txtarea_message {
+  min-height: 8rem;
 }
 
 @media screen and (max-width: 991px) {
