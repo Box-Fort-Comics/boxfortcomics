@@ -210,7 +210,7 @@
   justify-content: center;
   align-items: stretch;
   width: 100vw;
-  height: auto;
+  height: 100vh;
   margin-top: 0;
   display: flex;
 }
@@ -468,9 +468,11 @@
 }
 
 .sect_text {
+  color: #000;
   width: auto;
   margin-bottom: 2rem;
   font-family: Open Sans, sans-serif;
+  font-weight: 400;
   display: block;
 }
 
@@ -1145,11 +1147,7 @@
   width: auto;
 }
 
-.gallery_color {
-  display: none;
-}
-
-.gallery_line {
+.gallery_color, .gallery_line {
   display: block;
 }
 
@@ -1174,7 +1172,7 @@
   display: none;
 }
 
-.frame_wrapper {
+.cardboard_frame_wrapper {
   z-index: 5;
   background-image: url('../images/HeroBanner01.png');
   background-position: 0 0;
@@ -1398,7 +1396,7 @@
   overflow: visible;
 }
 
-.seq_color {
+.gallery_row-grid.colors, .seq_color {
   display: none;
 }
 
@@ -1691,7 +1689,7 @@
     width: 80vw;
   }
 
-  .frame_wrapper {
+  .cardboard_frame_wrapper {
     background-position: 90%;
     background-size: 200vw 100vh;
   }
@@ -1794,21 +1792,21 @@
   .navbar_wrapper {
     justify-content: flex-start;
     align-items: center;
-    height: 55px;
+    height: 60px;
     padding-left: 0;
     padding-right: 5vw;
   }
 
   .nav_menu_button {
-    width: 55px;
+    width: 60px;
     min-width: 8px;
-    height: 55px;
+    height: 60px;
     min-height: 8px;
   }
 
   .lottie_hamburger {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin-top: 5px;
     transform: scale(1.4);
   }
@@ -1841,7 +1839,7 @@
   }
 
   .sect_footer {
-    padding-bottom: 1rem;
+    padding-bottom: 0;
   }
 
   .overlay_black {
@@ -1907,6 +1905,7 @@
 
   .subheading {
     font-size: .75rem;
+    overflow: visible;
   }
 
   .sect_heading {
@@ -1922,6 +1921,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
+    overflow: hidden;
   }
 
   .scroll_wrapper {
@@ -1945,8 +1945,10 @@
 
   .button_mainpage {
     text-align: center;
-    width: 15rem;
-    min-width: 11rem;
+    width: 10rem;
+    min-width: 10rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: .9rem;
   }
 
@@ -2003,7 +2005,7 @@
     grid-row-gap: 30px;
     flex-flow: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     display: flex;
   }
@@ -2022,8 +2024,8 @@
   }
 
   .social_linkblock {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.6rem;
+    height: 2.6rem;
   }
 
   .banner_image_wrapper {
@@ -2041,7 +2043,7 @@
   .boxfort_headerlogo-mobile {
     object-fit: contain;
     object-position: 0% 50%;
-    height: 29px;
+    height: 30px;
     display: block;
     position: relative;
   }
@@ -2167,16 +2169,27 @@
     flex-flow: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 120px;
+    height: 140px;
+    margin-top: 10px;
   }
 
   .footer_linkswrap {
+    grid-column-gap: 7px;
+    grid-row-gap: 7px;
     flex-flow: column;
   }
 
   .footer_linkswrap.copyright {
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .footer_text {
+    font-size: 1.1rem;
+  }
+
+  .footer_text.copyright {
+    font-weight: 400;
   }
 
   .footer_wrapper2 {
