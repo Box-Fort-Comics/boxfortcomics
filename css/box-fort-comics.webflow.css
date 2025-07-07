@@ -217,8 +217,8 @@
 
 .overlay_black {
   z-index: 10;
-  opacity: 1;
-  background-color: #2e1803;
+  opacity: .99;
+  background-color: #422b1d;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -1209,13 +1209,13 @@
 }
 
 .sect_introanimation {
-  z-index: 100;
+  z-index: 9999;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  display: none;
-  position: absolute;
+  display: flex;
+  position: fixed;
 }
 
 .overlay_brown-slide {
