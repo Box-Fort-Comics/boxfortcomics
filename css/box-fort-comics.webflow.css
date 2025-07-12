@@ -1170,7 +1170,7 @@
   font-family: neue-kabel, sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  display: none;
+  display: block;
 }
 
 .cardboard_frame_wrapper {
@@ -1397,8 +1397,12 @@
   overflow: visible;
 }
 
-.gallery_row-grid.colors, .seq_color {
+.gallery_row-grid.colors {
   display: none;
+}
+
+.seq_color {
+  display: block;
 }
 
 .sect_gallery_sequential {
@@ -2262,7 +2266,7 @@
   }
 }
 
-#w-node-b980fc36-8be6-517c-1713-7c1d76f6b162-ec8bed51 {
+#w-node-b980fc36-8be6-517c-1713-7c1d76f6b162-ec8bed51, #w-node-_38708194-c630-6285-9ec2-75c528b27f02-ec8bed51 {
   grid-area: span 1 / span 2 / span 1 / span 2;
 }
 
