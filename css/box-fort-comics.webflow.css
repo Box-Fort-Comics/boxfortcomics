@@ -1012,7 +1012,7 @@
   z-index: 30;
   grid-column-gap: 78px;
   grid-row-gap: 78px;
-  background-color: #000000ba;
+  background-color: #363638;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -1215,7 +1215,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  display: none;
+  display: flex;
   position: fixed;
 }
 
