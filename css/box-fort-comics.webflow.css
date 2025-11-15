@@ -189,6 +189,7 @@
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 70px;
   display: flex;
   position: relative;
 }
@@ -600,7 +601,12 @@
 
 .comic_img.comingsoon {
   background-image: url('../images/Hiraeth---Coming-Soon-Cover.jpg');
-  display: block;
+  display: flex;
+}
+
+.comic_img.issue03 {
+  background-image: url('../images/Hiraeth.i03---clean.jpg');
+  display: flex;
 }
 
 .comic_card {
@@ -619,6 +625,10 @@
 
 .comic_card.comingsoon {
   background-color: #39393a;
+}
+
+.comic_card.issue03 {
+  background-color: #00596a;
 }
 
 .scroll_bg {
@@ -1055,14 +1065,14 @@
   min-height: 8rem;
 }
 
-.samppanels_grid {
+.latest_grid {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   margin-bottom: 3rem;
-  display: grid;
+  display: none;
 }
 
 .sect_togglebutton {
@@ -1486,6 +1496,56 @@
   position: fixed;
 }
 
+.sect_recentdrops {
+  z-index: 2;
+  background-color: #f6f6f9;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.currentbook_image {
+  border-radius: 15px;
+  width: 395px;
+  min-width: 395px;
+  height: 600px;
+  min-height: 600px;
+  display: inline-block;
+  overflow: clip;
+}
+
+.link_block_home {
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  position: static;
+}
+
+.hiraethsamp_grid {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-bottom: 3rem;
+  display: grid;
+}
+
+.sr-only {
+  color: #000;
+  width: 1px;
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 991px) {
   .navbar_wrapper {
     height: 60px;
@@ -1767,6 +1827,17 @@
   .startup_animation_button {
     display: none;
   }
+
+  .startup_animation_button_mobile {
+    display: flex;
+  }
+
+  .recent_cover_wrapper {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1946,7 +2017,6 @@
   }
 
   .sect_heading {
-    margin-bottom: .5em;
     font-size: 2rem;
     line-height: 2rem;
   }
@@ -1982,8 +2052,8 @@
 
   .button_mainpage {
     text-align: center;
-    width: 10rem;
-    min-width: 10rem;
+    width: 11rem;
+    min-width: 11rem;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: .9rem;
@@ -2133,7 +2203,7 @@
     min-height: 457px;
   }
 
-  .samppanels_grid {
+  .latest_grid {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-rows: auto;
@@ -2299,6 +2369,20 @@
 
   .startup_animation_button_mobile {
     display: block;
+  }
+
+  .currentbook_image {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    min-height: auto;
+  }
+
+  .hiraethsamp_grid {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
